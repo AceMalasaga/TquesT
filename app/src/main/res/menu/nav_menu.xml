@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ShowIn = "navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_create_basic"
+            android:icon="@drawable/baseline_menu_book_24"
+            android:title="Study Guide"/>
+
+        <item
+            android:id="@+id/nav_board"
+            android:icon="@drawable/baseline_dashboard_24"
+            android:title="Board"/>
+
+        <item
+            android:id="@+id/nav_New_Quest"
+            android:icon="@drawable/baseline_add_24"
+            android:title="Add Question"/>
+
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/baseline_link_24"
+            android:title="Reference"/>
+    </group>
+
+    <item
+        android:title="Exit">
+
+        <menu>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/baseline_exit_to_app_24"
+                android:title="Exit"/>
+
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black_800"
+    android:layout_height="match_parent"
+    tools:context=".BasicLevel">
+
+    <View
+        android:id="@+id/topBackground"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/green_600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgbackInterMain"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/lblBasic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/intermediate_level"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/countdownTimerInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblBasic" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/questCard1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/countdownTimerInter"
+        >
+
+        <TextView
+            android:id="@+id/scoreInter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+            android:id="@+id/questionInter"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/question"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <RadioGroup
+        android:id="@+id/optionsRadioGroupInter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/questCard1"
+        android:layout_margin="20dp">
+
+        <RadioButton
+            android:id="@+id/optTrue"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:text="True"
+            android:background="@drawable/radio_button_background"
+            />
+
+        <RadioButton
+            android:id="@+id/optFalse"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="False"
+            android:textStyle="bold"
+            android:background="@drawable/radio_button_background"
+            android:layout_marginTop="40dp"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNextInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionsRadioGroupInter"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="60dp"
+        android:text="Next"/>
+
+    <Button
+        android:id="@+id/btnSubmitInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintStart_toEndOf="@+id/btnNextInter"
+        app:layout_constraintTop_toTopOf="@+id/btnNextInter"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_800"
+    tools:context=".CreateBasic">
+
+    <!-- Top Background -->
+    <View
+        android:id="@+id/topBackground"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/green_600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/imgBackHardCreate"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Title Label -->
+    <TextView
+        android:id="@+id/lblBasic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/reference"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- CardView for Credits -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBoardBasic"
+        android:layout_width="0dp"
+        android:layout_height="720dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/lblBasic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="30dp"
+        android:outlineSpotShadowColor="@color/black">
+
+        <!-- Credits Layout -->
+        <LinearLayout
+            android:id="@+id/layoutCredits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Credits Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sanfoundry"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sanfoundry_provides_a_vast_collection_of_questions_and_answers_on_various_topics"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <!-- Website Link -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://www.sanfoundry.com/"
+                android:textColor="@color/link"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:padding="8dp"
+                android:onClick="openWebsite"
+                />
+
+            <!-- Credits Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/syvum"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online Education, Interactive Learning and Homework"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <!-- Website Link -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://www.syvum.com/"
+                android:textColor="@color/link"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:padding="8dp"
+                android:onClick="openWebsite" />
+
+            <!-- Credits Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="w3schools"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="W3Schools offers a wide range of services and products for beginners and professionals,
+helping millions of people everyday to learn and master new skills."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <!-- Website Link -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://www.w3schools.com/"
+                android:textColor="@color/link"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:padding="8dp"
+                android:onClick="openWebsite" />
+
+            <!-- Credits Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quizlet"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a web-based tool that allows users to create study tools such as interactive flashcards, tests, and study games."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <!-- Website Link -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://quizlet.com/latest"
+                android:textColor="@color/link"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:padding="8dp"
+                android:onClick="openWebsite" />
+
+            <!-- Credits Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/efaculty"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <!-- Website Link -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://www.efaculty.in/"
+                android:textColor="@color/link"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:padding="8dp"
+                android:onClick="openWebsite" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
